@@ -101,7 +101,7 @@ public class FramePrivet extends JFrame {
 		saveButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				File file = new File("C:/Users/h129355/Desktop/String/data.dat");
+				File file = new File("C:/GIT/Bart/octocat.txt");
 				String text = textField.getText();
 				try {
 		            try (FileWriter writer = new FileWriter(file)) {
