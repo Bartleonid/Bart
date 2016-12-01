@@ -16,23 +16,18 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class FramePrivet extends JFrame {
-
+	
+	/**
+	 * Fields of classes (Properties of class)
+	 */
 	private JLabel label;
 	private JTextField textField;
 	private JTextField textField1;
 	private JLabel label1;
-
-
-
 	private JFrame frame;
-
 	private JButton button;
 	private JButton saveButton;
-
 	private JPanel panel;
-
-
-
 
 	/**
 	 * Constructor
@@ -43,7 +38,7 @@ public class FramePrivet extends JFrame {
 	}
 
 	/**
-	 * GUI initialization
+	 * GUI initialization of fields (создаем объекты классов, и привязываем к перменным класса)
 	 */
 	private void initGUI() {
 
@@ -54,11 +49,7 @@ public class FramePrivet extends JFrame {
 		saveButton = new JButton("Save");
 		textField1 = new JTextField(15);
 		label1 = new JLabel("2");
-
-
 		panel = new JPanel();
-
-
 
 
 		//JTextField her = new JTextField(15);
@@ -68,6 +59,9 @@ public class FramePrivet extends JFrame {
 		//button.add(her2);
 		//panel.add(her2);
 
+		/**
+		 * adding elements to panel (JPanel)
+		 */
 
 		panel.add(saveButton);
 		panel.add(button);
@@ -76,16 +70,17 @@ public class FramePrivet extends JFrame {
 		panel.add(textField1);
 		panel.add(label1);
 
-
-
-
+		/**
+		 * adding panel to frame
+		 */
+		
 		frame.getContentPane().add(panel);
 		frame.setVisible(true);
 		frame.setSize(500, 500);
 
-
 	}
 
+	
 	private void initListeners() {
 
 
@@ -115,8 +110,6 @@ public class FramePrivet extends JFrame {
 		    } finally {
 
 		    }
-
-
 
 
 			}
